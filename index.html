@@ -1,0 +1,465 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<!-- InstanceBegin template="/Templates/project_template.dwt" codeOutsideHTMLIsLocked="false" --><!-- the above lines are very important to use CSS in order to have same appearance--><!-- General Header (ver.2) -->
+<HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<TITLE>Learning Image Enhancement</TITLE>
+    <LINK href="./main.css" rel="stylesheet" type="text/css">
+	
+	<!--<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-36966695-6', 'mpg.de');
+	  ga('send', 'pageview');
+	</script>-->
+</HEAD>
+
+<BODY> 
+<!-- <body oncontextmenu="return false" ondragstart="return false" onkeydown="return false" onselectstart="return false"> -->
+<DIV id="bodyframe">
+
+<!-- Main Content Body Frame -->
+<DIV id="projectbody">
+<BR>
+ <!-- InstanceBeginEditable name="body frame" -->
+ <TABLE width="950" border="0">
+   <TBODY>
+     <TR>
+       <TD colspan="3"><DIV align="center"><STRONG>IEEE Transactions on Pattern Analysis and Machine Intelligence</STRONG></DIV></TD>
+     </TR>
+     <TR>
+       <TD colspan="3">&nbsp;</TD>
+     </TR>
+     <TR>
+       <TD colspan="3"><DIV align="center" class="xlarge">Efficient Learning-based Image Enhancement</DIV></TD>
+     </TR>
+   </TBODY>
+ </TABLE>
+
+<br>
+ 
+ <TABLE border="0">
+   <TBODY>
+     <TR>
+       <TD width=150></TD>
+       <TD width=120><A href="http://research.google.com/pubs/YoungheeKwon.html" target="_blank"><STRONG>Younghee Kwon</STRONG></A></TD>
+	   <!-- <TD width=120><STRONG>Younghee Kwon</STRONG></TD> -->
+	   <TD width=120><A href="http://people.mpi-inf.mpg.de/~kkim/" target="_blank"><STRONG>Kwang In Kim</STRONG></A></TD>
+	   <TD width=120><A href="http://www.jamestompkin.com/" target="_blank"><STRONG>James Tompkin</STRONG></A></TD>
+	   <TD width=120><A href="http://ai.kaist.ac.kr/~jkim/" target="_blank"><STRONG>Jin Hyung Kim</STRONG></A></TD>
+	   <TD><A href="http://www.mpi-inf.mpg.de/~theobalt/" target="_blank"><STRONG>Christian Theobalt</STRONG></A></TD>
+     </TR>
+   </TBODY>
+ </TABLE>
+ 
+ <TABLE width="950" border="0">
+   <TBODY>
+   <TR>
+     <TD width="60"></TD>
+	 <TD width="140"><STRONG><A href="http://www.mpi-inf.mpg.de/" target="_blank">MPI f¨¹r Informatik</A></STRONG></TD>
+	 <TD width="80"><STRONG><A href="http://www.kaist.ac.kr/" target="_blank">KAIST</A></STRONG></TD>
+     <TD width="140"><STRONG><A href="http://www.lancaster.ac.uk/" target="_blank">Lancaster University</A></STRONG></TD>
+	 <TD width="160"><STRONG><A href="http://www.seas.harvard.edu/" target="_blank">Harvard University SEAS</A></STRONG></TD>
+	 <!--- <TD width="160"><STRONG><A href="https://research.google.com/" target="_blank">Google Inc.</A></STRONG></TD> --->
+   </TR>
+   </TBODY>
+ </TABLE>
+
+<br>
+ 
+<figure>
+<IMG src="./teaser.jpg" width=850>
+<figcaption><em>Top:</em> Bicubic resampling. <em>Middle:</em> Kim and Kwon [6]. <em>Bottom:</em> Our method with fast-learning of a dataset-specific super-resolution.<br>
+<em>Left:</em> Face-specific super-resolution: [6] ¡÷PSNR: 1:18dB, ¡÷SSIM: 0:032; our method ¡÷PSNR: 2:10dB, ¡÷SSIM: 0:054.<br>
+<em>Right:</em> Document-specific super-resolution; 2x and 3x magnification.</figcaption>
+</figure>
+ 
+<br><br>
+ 
+<TABLE width="910" border="0">
+  <TBODY>
+	<TR>
+		<TD width="10"></TD>
+		<TD class="large">Abstract</TD>
+    </TR>
+    <TR>
+		<TD width="10"></TD>
+        <TD width="400"><div align="justify">Improving the quality of degraded images is a key problem in image processing, but the breadth of the problem leads to
+											domain-specific approaches for tasks such as super-resolution and compression artifact removal. Recent approaches have shown that
+											a general approach is possible by learning application-specific models from examples; however, learning models sophisticated enough
+											to generate high-quality images is computationally expensive, and so specific per-application or per-dataset models are impractical. To
+											solve this problem, we present an efficient semi-local approximation scheme to large-scale Gaussian processes. This allows efficient
+											learning of task-specific image enhancements from example images without reducing quality. As such, our algorithm can be easily
+											customized to specific applications and datasets, and we show the efficiency and effectiveness of our approach across five domains:
+											single-image super-resolution for scene, human face, and text images, and artifact removal in JPEG- and JPEG 2000-encoded images.</div>
+		</TD>
+    </TR>
+	</TBODY>
+</TABLE>
+
+<br>
+<TABLE>
+	<TBODY>
+    <TR>
+		<TD width="75">&nbsp;</TD>
+        <TD>
+		<PRE>@inproceedings{Kwon:2015:TPAMI<BR> author = {Younghee Kwon and Kwang In Kim and James Tompkin and Jin Hyung Kim and Christian Theobalt},<BR> title = {Efficient Learning of Image Super-resolution and Compression Artifact Removal<BR>		  with Semi-local {Gaussian} Processes},<BR> booktitle = {IEEE Transactions on Pattern Analysis and Machine Intelligence},<BR> volume = {37},<BR> number = {9},<BR> pages = {1792--1805},<BR> year = {2015}<BR>}</PRE>
+		</TD>
+    </TR>
+  </TBODY>
+</TABLE>	
+
+<br>
+<TABLE>
+	<TBODY>
+	<TR>
+		<TD>
+		 <TABLE border="0" align="center">
+		 <TBODY>
+			<TR>
+				<TD width="250"></TD>
+				<TD align="center" valign="middle"><A href="./EfficientLearning-basedImageEnhancement_TPAMI2014_Paper.pdf" target="_self"><IMG src="./paper_thumbnail.png" BORDER=0 ></A></TD>
+				<TD width="130"></TD>
+				<TD>&nbsp;&nbsp;&nbsp;<A href="./EfficientLearning-basedImageEnhancement_TPAMI2014_Supplemental.pdf" target="_self"><IMG src="./supplemental_thumbnail.png" BORDER=0 ></A></TD>
+			</TR>
+			<TR>
+				<TD width="55"></TD>
+				<TD align="center" valign="top">
+				Paper<BR>
+				<A href="./EfficientLearning-basedImageEnhancement_TPAMI2014_Paper.pdf" target="_self">PDF (3 MB)</A>
+				</TD>
+				<TD width="130">&nbsp;</TD>
+				<TD align="center" valign="top">
+				Supplemental Material<BR>
+				<A href="./EfficientLearning-basedImageEnhancement_TPAMI2014_Supplemental.pdf" target="_self">PDF (32 MB)</A>
+				</TD>
+			</TR>
+
+		 </TBODY>
+		 </TABLE>
+		</TD>
+	</TR>
+</TABLE>
+
+<br><br><hr width='920'><br><br>
+
+<TABLE width="910" border="0">
+  <TBODY>
+	<TR>
+		<TD width="10"></TD>
+		<TD class="large">Super-resolution Comparison Results</TD>
+    </TR>
+	</TBODY>
+</TABLE>
+
+<br><br>
+
+<div id="SupResAppendPoint"></div>
+
+<script language="javascript" type=text/javascript>
+// Define comparison sets...
+var images1 = ["./comparisons/superresolution/macaw/M2Ckodim23C.bmp",
+				"./comparisons/superresolution/macaw/M2Ckodim23CBicubic.bmp",
+				"./comparisons/superresolution/macaw/M2Ckodim23CLLE.png",
+				"./comparisons/superresolution/macaw/M2Ckodim23CFreeman.png",
+				"./comparisons/superresolution/macaw/M2Ckodim23CGPSP.png",
+				"./comparisons/superresolution/macaw/M2Ckodim23CNIPO.png",
+				"./comparisons/superresolution/macaw/M2Ckodim23COurs.png"
+				];
+var names1 = ["Original high resolution",
+				"Bicubic upsampling (2x)",
+				"Chang et al. [11]",
+				"Freeman et al. [5]",
+				"He and Siu [13]",
+				"Kim and Kwon [6]",
+				"Ours"
+			];
+
+var images1_1 = ["./comparisons/superresolution/macaw/M2Fabio.bmp",
+				"./comparisons/superresolution/macaw/M2FabioBicubic.bmp",
+				"./comparisons/superresolution/macaw/M2FabioLLE.png",
+				"./comparisons/superresolution/macaw/M2FabioFreeman.png",
+				"./comparisons/superresolution/macaw/M2FabioGPSP.png",
+				"./comparisons/superresolution/macaw/M2FabioNIPO.png",
+				"./comparisons/superresolution/macaw/M2FabioOurs.png"
+				];
+var names1_1 = ["Original high resolution",
+				"Bicubic upsampling (2x)",
+				"Chang et al. [11]",
+				"Freeman et al. [5]",
+				"He and Siu [13]",
+				"Kim and Kwon [6]",
+				"Ours"
+			];
+
+			
+var images2 = ["./comparisons/superresolution/macaw/M3Ckodim05C.bmp",
+				"./comparisons/superresolution/macaw/M3Ckodim05CBicubic.bmp",
+				"./comparisons/superresolution/macaw/M3Ckodim05CLLE.png",
+				"./comparisons/superresolution/macaw/M3Ckodim05CSpB.png",
+				"./comparisons/superresolution/macaw/M3Ckodim05CNIPO.png",
+				"./comparisons/superresolution/macaw/M3Ckodim05COurs.png"
+				];
+var names2 = ["Original high resolution",
+				"Bicubic upsampling (3x)",
+				"Chang et al. [11]",
+				"Yang et al. [12]",
+				"Kim and Kwon [6]",
+				"Ours"
+			];
+
+var images3 = ["./comparisons/superresolution/macaw/M4Ckodim04C.bmp",
+				"./comparisons/superresolution/macaw/M4Ckodim04CBicubic.bmp",
+				"./comparisons/superresolution/macaw/M4Ckodim04CLLE.png",
+				"./comparisons/superresolution/macaw/M4Ckodim04CFreeman.png",
+				"./comparisons/superresolution/macaw/M4Ckodim04CGPSP.png",
+				"./comparisons/superresolution/macaw/M4Ckodim04CNIPO.png",
+				"./comparisons/superresolution/macaw/M4Ckodim04COurs.png"
+				];
+var names3 = ["Original high resolution",
+				"Bicubic upsampling (4x)",
+				"Chang et al. [11]",
+				"Freeman et al. [5]",
+				"He and Siu [13]",
+				"Kim and Kwon [6]",
+				"Ours"
+			];			
+
+// Define more comparison sets...
+// var images2 ....
+// var names2 ...				
+				
+
+function switchImage( divElement, imageURL )
+{
+	document.getElementById( divElement ).src = imageURL;
+}
+
+var nComps = 0;	
+function addComparisonSet( images, names, pad, width, attachDiv, suppressSpaceAfter )
+{
+	var imageset = "imageset" + nComps;
+	var fieldset = "field" + nComps;
+	var formset = "form" + nComps;
+	
+	var html = "<TABLE width='910' border='0'><TBODY><TR><TD width='" + pad + "'></TD><TD width='" + width + "'><img id='" + imageset + "' src='" + images[0] + "'></TD><TD width='30'></TD><TD><form name='" + formset + "'>";
+	
+	for( var i = 0; i < images.length; i++ )
+	{
+		var checked = "";
+		if( i == 0 )
+		{
+			checked = " checked";
+		}
+		
+		html += "<input type='radio' name='" + fieldset + "' value='" + i + "' onchange=\'switchImage( \"" + imageset + "\", \"" + images[i] + "\" )\'" + checked + ">" + names[i] + "<br>";
+	}
+
+	// If you want a horizontal line separating the items:
+	//html += "</form></TD></TR></TBODY></TABLE><br><hr width='920'><br>";
+	// If not:
+	html += "</form></TD></TR></TBODY></TABLE>";
+	
+	if( !suppressSpaceAfter )
+	{
+		html += "<br><br>";
+	}
+
+	nComps++;
+
+	// Add set to document
+	var tab = document.createElement("DIV");
+	tab.innerHTML = html;
+	document.getElementById(attachDiv).appendChild( tab );
+}
+
+// Add comparison set to document
+addComparisonSet( images1, names1, 50, 512, "SupResAppendPoint" );
+// Add more comparison sets to document
+addComparisonSet( images1_1, names1_1, 50, 256, "SupResAppendPoint", true );
+
+var tab = document.createElement("DIV");
+tab.innerHTML = "<TABLE><TBODY><TD width='50'/><TD><a href=http://nuit-blanche.blogspot.com/2012/03/let-there-be-only-one-fabio.html?m=1 target='_blank'>Redress the Lena imbalance!</a> Unfortunately discovered only after TPAMI had finalized the paper.</TD></TBODY></TABLE><br><br>";
+var el = document.getElementById("SupResAppendPoint").appendChild( tab );
+
+addComparisonSet( images2, names2, 50, 512, "SupResAppendPoint" );
+addComparisonSet( images3, names3, 50, 512, "SupResAppendPoint" );
+</script>
+
+<hr width='920'><br><br>
+
+<TABLE width="910" border="0">
+  <TBODY>
+	<TR>
+		<TD width="10"></TD>
+		<TD class="large">JPEG Artifact Removal Comparison Results</TD>
+    </TR>
+	</TBODY>
+</TABLE>
+
+<br><br>
+
+<div id="JPEGAppendPoint"></div>
+
+<script language="javascript" type=text/javascript>
+var images4 = ["./comparisons/JPEG/GLenaBig.bmp",
+				"./comparisons/JPEG/Q2GLenaBigGJPEG.png",
+				"./comparisons/JPEG/Q2GLenaBigReapp.png",
+				"./comparisons/JPEG/Q2GLenaBigSADCT.png",
+				"./comparisons/JPEG/Q2GLenaBigPOE.png",
+				"./comparisons/JPEG/Q2GLenaBigFOE.png",
+				"./comparisons/JPEG/Q2GLenaBigOurs.png"
+				];
+var names4 = ["Original",
+				"JPEG (Q2)",
+				"Nosratinia [15]",
+				"Foi et al. [17]",
+				"Gehler and Welling [1],",
+				"Roth and Black [3]",
+				"Ours"
+			];			
+
+var images5 = ["./comparisons/JPEG/BSD108073_S256.bmp",
+				"./comparisons/JPEG/Q2BSD108073_S256JPEG.png",
+				"./comparisons/JPEG/Q2BSD108073_S256Reapp.png",
+				"./comparisons/JPEG/Q2BSD108073_S256SADCT.png",
+				"./comparisons/JPEG/Q2BSD108073_S256POE.png",
+				"./comparisons/JPEG/Q2BSD108073_S256FOE.png",
+				"./comparisons/JPEG/Q2BSD108073_S256Ours.png"
+				];
+var names5 = ["Original",
+				"JPEG (Q2)",
+				"Nosratinia [15]",
+				"Foi et al. [17]",
+				"Gehler and Welling [1],",
+				"Roth and Black [3]",
+				"Ours"
+			];			
+
+var images6 = ["./comparisons/JPEG/Ckodim23C.bmp",
+				"./comparisons/JPEG/Q3Ckodim23CJPEG.png",
+				"./comparisons/JPEG/Q3Ckodim23CReapp.png",
+				"./comparisons/JPEG/Q3Ckodim23CSADCT.png",
+				"./comparisons/JPEG/Q3Ckodim23CPOE.png",
+				"./comparisons/JPEG/Q3Ckodim23CFOE.png",
+				"./comparisons/JPEG/Q3Ckodim23COurs.png"
+				];
+var names6 = ["Original",
+				"JPEG (Q3)",
+				"Nosratinia [15]",
+				"Foi et al. [17]",
+				"Gehler and Welling [1],",
+				"Roth and Black [3]",
+				"Ours"
+			];			
+
+var images7 = ["./comparisons/JPEG/Ckodim11C.bmp",
+				"./comparisons/JPEG/Q3Ckodim11CJPEG.png",
+				"./comparisons/JPEG/Q3Ckodim11CReapp.png",
+				"./comparisons/JPEG/Q3Ckodim11CSADCT.png",
+				"./comparisons/JPEG/Q3Ckodim11CPOE.png",
+				"./comparisons/JPEG/Q3Ckodim11CFOE.png",
+				"./comparisons/JPEG/Q3Ckodim11COurs.png"
+				];
+var names7 = ["Original",
+				"JPEG (Q3)",
+				"Nosratinia [15]",
+				"Foi et al. [17]",
+				"Gehler and Welling [1],",
+				"Roth and Black [3]",
+				"Ours"
+			];
+
+addComparisonSet( images4, names4, 50, 512, "JPEGAppendPoint" );
+addComparisonSet( images5, names5, 50, 256, "JPEGAppendPoint" );
+addComparisonSet( images6, names6, 50, 512, "JPEGAppendPoint" );
+addComparisonSet( images7, names7, 50, 512, "JPEGAppendPoint" );
+</script>
+
+<hr width='920'><br><br>
+
+<TABLE width="910" border="0">
+  <TBODY>
+	<TR>
+		<TD width="10"></TD>
+		<TD class="large">JPEG2000 Artifact Removal Comparison Results</TD>
+    </TR>
+	</TBODY>
+</TABLE>
+
+<br><br>
+
+<div id="JPEG2000AppendPoint"></div>
+
+<script language="javascript" type=text/javascript>
+var images8 = ["./comparisons/J2K/Ckodim19C.bmp",
+				"./comparisons/J2K/RP15Ckodim19C.jpc.bmp",
+				"./comparisons/J2K/RP15Ckodim19CReapp.png",
+				"./comparisons/J2K/RP15Ckodim19CPOE.png",
+				"./comparisons/J2K/RP15Ckodim19CFOE.png",
+				"./comparisons/J2K/RP15Ckodim19COurs.png"
+				];
+
+var names8 = ["Original",
+				"JPEG 2000 (0.15BPP)",
+				"Nosratinia [15]",
+				"Gehler and Welling [1],",
+				"Roth and Black [3]",
+				"Ours"
+			];
+
+var images9 = ["./comparisons/J2K/GLenaBig.bmp",
+				"./comparisons/J2K/RP15GLenaBig.jpc.bmp",
+				"./comparisons/J2K/RP15GLenaBigReapp.png",
+				"./comparisons/J2K/RP15GLenaBigPOE.png",
+				"./comparisons/J2K/RP15GLenaBigFOE.png",
+				"./comparisons/J2K/RP15GLenaBigOurs.png"
+				];
+var names9 = ["Original",
+				"JPEG 2000 (0.15BPP)",
+				"Nosratinia [15]",
+				"Gehler and Welling [1],",
+				"Roth and Black [3]",
+				"Ours"
+			];
+
+addComparisonSet( images8, names8, 50, 512, "JPEG2000AppendPoint" );
+addComparisonSet( images9, names9, 50, 512, "JPEG2000AppendPoint" );
+</script>
+
+<hr width='920'><br><br>
+
+<TABLE width="910" border="0">
+  <TBODY>
+	<TR>
+		<TD width="10"></TD>
+		<TD class="large">Acknowledgements</TD>
+    </TR>
+	<TR>
+		<TD height="10"></TD>
+    </TR>
+	<TR>
+		<TD width="10"></TD>
+		<TD>We thank the anonymous TPAMI reviewers for their feedback. The ideas presented have greatly profited from discussions with Christian Walder, Nils Hasler, Miguel Granados, and Carsten Stoll. Part of this work was completed while Y. Kwon was with KAIST, while K. I. Kim was with the machine learning group, Saarland University, and while K. I. Kim and J. Tompkin were with the GVV group, Max-Planck-Institute for Informatics. J. Tompkin acknowledges NSF CGV-1110955.</TD>
+	</TR>
+	<TR>
+		<TD height="10"></TD>
+    </TR>
+	<TR>
+		<TD width="10"></TD>
+		<TD>Images courtesy of <a href="http://www.itl.nist.gov/iad/humanid/feret/feret_master.html">The Facial Recognition Technology (FERET) Database</a>,  
+		<a href="http://r0k.us/graphics/kodak/">Kodak Lossless True Color Image Suite</a>,
+		<a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/">The Berkeley Segmentation Dataset</a>, <a href="http://en.wikipedia.org/wiki/Lenna">Lena</a> <a href="http://www.ece.rice.edu/~wakin/images/">courtesy</a> of <a href="http://www.computableminds.com/post/lena-soderberg-common-image-processing-test-images.html">Playboy</a>, and <a href="http://nuit-blanche.blogspot.com/2012/03/let-there-be-only-one-fabio.html?m=1">Fabio</a> courtesy of <a href="http://en.wikipedia.org/wiki/Fabio_Lanzoni">Fabio Lanzoni</a> (agent: Eric Ashenberg) via <a href="http://www.cmc.edu/pages/faculty/DNeedell/index.php">Deanna Needell</a> - thanks!</TD>
+	</TR>
+  </TBODY>
+</TABLE>
+
+
+<br><br><br><br>
+
+
+<!-- InstanceEnd -->
+</BODY></HTML>
