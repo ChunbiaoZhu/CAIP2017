@@ -1,8 +1,8 @@
 
-CAIP2017 - 17th international Conference on Computer Analysis of Images and Patterns
-======================================================================
-## A Multilayer Backpropagation Saliency Detection Algorithm Based on Depth Mining
+## CAIP2017 - 17th international Conference on Computer Analysis of Images and Patterns
 
+A Multilayer Backpropagation Saliency Detection Algorithm Based on Depth Mining
+======================================================================
 Chunbiao Zhu1, Ge Li1*, Xiaoqiang Guo2, Ronggang Wang1, Wenmin Wang1
 
 1School of Electronic and Computer Engineering, Shenzhen Graduate School, Peking University, Shenzhen, China 
