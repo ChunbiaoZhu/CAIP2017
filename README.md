@@ -7,7 +7,7 @@ Chunbiao Zhu1, Ge Li1*, Xiaoqiang Guo2, Ronggang Wang1, Wenmin Wang1
 
 1School of Electronic and Computer Engineering, Shenzhen Graduate School, Peking University, Shenzhen, China 
 
-2Academy of Broadcasting Science, SAPPRET Beijing, China
+2Academy of Broadcasting Science, SAPPRFT Beijing, China
 
 WebPage
  ======================================================================
