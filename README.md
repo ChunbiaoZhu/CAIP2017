@@ -29,7 +29,7 @@ If you have any question,please email us!
 
 ## Posterior work
 
-If you were interested in this work, you may want to also check our posterior work, [CAIP2017](https://chunbiaozhu.github.io/ACVR2017/), which offers a novel idea.
+If you were interested in this work, you may want to also check our posterior work, [ICCV2017](https://chunbiaozhu.github.io/ACVR2017/), which offers a novel idea.
 
 ## Contacts
 
