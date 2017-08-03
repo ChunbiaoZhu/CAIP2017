@@ -9,9 +9,9 @@
 [logo-caip]: https://github.com/ChunbiaoZhu/CAIP2017/blob/master/images/ystad.png "CAIP 2017 logo"
 
 
-## Publication & Congratulations!
+## Publication & Congratulations! 
 
-This paper is selected as an Sample Paper in [CAIP2017](https://www.springer.com/cn/book/9783319646978#otherversion=9783319646985)
+This paper is selected as the Sample Paper in [CAIP2017](https://www.springer.com/cn/book/9783319646978#otherversion=9783319646985)
 
 
 ## Abstract
