@@ -6,9 +6,12 @@
 |  ![CAIP 2017 logo][logo-caip] | Paper accepted at [ 17th International Conference on Computer Analysis of Images and Patterns (CAIP 2017)](https://www.cvl.isy.liu.se/CAIP2017.html)   |
 |:-:|---|
 
-[logo-caip]: https://github.com/ChunbiaoZhu/CAIP2017/blob/master/images/caip_logo.png "CAIP 2017 logo"
+[logo-caip]: https://github.com/ChunbiaoZhu/CAIP2017/blob/master/images/ystad.png "CAIP 2017 logo"
 
 
+## Publication & Congratulations!
+
+This paper is selected as an Sample Paper in, [CAIP2017](https://www.springer.com/cn/book/9783319646978#otherversion=9783319646985)
 
 
 ## Abstract
@@ -39,9 +42,7 @@ If you use our codes,please cite this paper!
 
 If you have any question,please email us!
 
-## Publication & Congratulations!
 
-This paper is selected as an Sample Paper in, [CAIP2017](https://www.springer.com/cn/book/9783319646978#otherversion=9783319646985)
 
 ## Posterior work
 
