@@ -11,7 +11,7 @@
 
 ## Publication & Congratulations! 
 
-This paper is selected as the Sample Paper in [CAIP2017](https://www.springer.com/cn/book/9783319646978#otherversion=9783319646985)
+This paper is selected as the [Sample Paper](http://www.springer.com/cda/content/document/cda_downloaddocument/9783319646978-c2.pdf?SGWID=0-0-45-1612625-p181071051) in [CAIP2017](https://www.springer.com/cn/book/9783319646978#otherversion=9783319646985)
 
 
 ## Abstract
