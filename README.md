@@ -61,26 +61,26 @@ If you have any general doubt about our work or code which may be of interest fo
 ## Cite this paper as:
 Zhu C., Li G., Guo X., Wang W., Wang R. (2017) A Multilayer Backpropagation Saliency Detection Algorithm Based on Depth Mining. In: Felsberg M., Heyden A., Krüger N. (eds) Computer Analysis of Images and Patterns. CAIP 2017. Lecture Notes in Computer Science, vol 10425. Springer, Cham
 ## Cite this paper as:
-@Inbook{Zhu2017,
-author="Zhu, Chunbiao
-and Li, Ge
-and Guo, Xiaoqiang
-and Wang, Wenmin
-and Wang, Ronggang",
-editor="Felsberg, Michael
-and Heyden, Anders
-and Kr{\"u}ger, Norbert",
-title="A Multilayer Backpropagation Saliency Detection Algorithm Based on Depth Mining",
-bookTitle="Computer Analysis of Images and Patterns: 17th International Conference, CAIP 2017, Ystad, Sweden, August 22-24, 2017, Proceedings, Part II",
-year="2017",
-publisher="Springer International Publishing",
-address="Cham",
-pages="14--23",
-abstract="Saliency detection is an active topic in multimedia field. Several algorithms have been proposed in this field. Most previous works on saliency detection focus on 2D images. However, for some complex situations which contain multiple objects or complex background, they are not robust and their performances are not satisfied. Recently, 3D visual information supplies a powerful cue for saliency detection. In this paper, we propose a multilayer backpropagation saliency detection algorithm based on depth mining by which we exploit depth cue from four different layers of images. The evaluation of the proposed algorithm on two challenging datasets shows that our algorithm outperforms state-of-the-art.",
-isbn="978-3-319-64698-5",
-doi="10.1007/978-3-319-64698-5_2",
-url="https://doi.org/10.1007/978-3-319-64698-5_2"
-}
+	@Inbook{Zhu2017,
+	author="Zhu, Chunbiao
+	and Li, Ge
+	and Guo, Xiaoqiang
+	and Wang, Wenmin
+	and Wang, Ronggang",
+	editor="Felsberg, Michael
+	and Heyden, Anders
+	and Kr{\"u}ger, Norbert",
+	title="A Multilayer Backpropagation Saliency Detection Algorithm Based on Depth Mining",
+	bookTitle="Computer Analysis of Images and Patterns: 17th International Conference, CAIP 2017, Ystad, Sweden, August 22-24, 		2017, Proceedings, Part II",
+	year="2017",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="14--23",
+	abstract="Saliency detection is an active topic in multimedia field. Several algorithms have been proposed in this field. Most previous works on saliency detection focus on 2D images. However, for some complex situations which contain multiple objects or complex background, they are not robust and their performances are not satisfied. Recently, 3D visual information supplies a powerful cue for saliency detection. In this paper, we propose a multilayer backpropagation saliency detection algorithm based on depth mining by which we exploit depth cue from four different layers of images. The evaluation of the proposed algorithm on two challenging datasets shows that our algorithm outperforms state-of-the-art.",
+	isbn="978-3-319-64698-5",
+	doi="10.1007/978-3-319-64698-5_2",
+	url="https://doi.org/10.1007/978-3-319-64698-5_2"
+	}
 
 
 
