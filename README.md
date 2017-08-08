@@ -18,7 +18,6 @@ This paper is selected as the [Sample Paper](http://www.springer.com/cda/content
 	
 Saliency detection is an active topic in multimedia field. Several algorithms have been proposed in this field. Most previous works on saliency detection focus on 2D images. However, for some complex situations which contain multiple objects or complex background, they are not robust and their performances are not satisfied. Recently, 3D visual information supplies a powerful cue for saliency detection. In this paper, we propose a multilayer backpropagation saliency detection algorithm based on depth mining by which we exploit depth cue from three different layers of images. The evaluation of the proposed algorithm on two challenging datasets shows that our algorithm outperforms state-of-the-art.
 
-
 ## Framework
 ![QFramework saliency detection](https://github.com/ChunbiaoZhu/CAIP2017/blob/master/images/frame.png)
 
@@ -43,7 +42,6 @@ If you use our codes,please cite this paper!
 If you have any question,please email us!
 
 
-
 ## Posterior work
 
 If you were interested in this work, you may want to also check our posterior work, [ICCV2017](https://chunbiaozhu.github.io/ACVR2017/), which offers a novel idea.
@@ -60,9 +58,9 @@ Province, China (No.2014B090910001), the grant of Guangdong Province Projects of
 
 If you have any general doubt about our work or code which may be of interest for other researchers, please use the [public issues section](https://github.com/ChunbiaoZhu/CAIP2017/issues) on this github repo. Alternatively, drop us an e-mail at <mailto:zhuchunbiao@pku.edu.cn>.
 
-###Cite this paper as:
+## Cite this paper as:
 Zhu C., Li G., Guo X., Wang W., Wang R. (2017) A Multilayer Backpropagation Saliency Detection Algorithm Based on Depth Mining. In: Felsberg M., Heyden A., Krüger N. (eds) Computer Analysis of Images and Patterns. CAIP 2017. Lecture Notes in Computer Science, vol 10425. Springer, Cham
-###Cite this paper as:
+## Cite this paper as:
 @Inbook{Zhu2017,
 author="Zhu, Chunbiao
 and Li, Ge
