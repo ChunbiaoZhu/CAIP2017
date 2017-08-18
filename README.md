@@ -52,6 +52,8 @@ If you have any question,please email us!
 
 If you were interested in this work, you may want to also check our posterior work, [ICCV2017](https://chunbiaozhu.github.io/ACVR2017/), which offers a novel idea.
 
+If you were interested in this work, you may want to also check our posterior work, [MM2017](https://chunbiaozhu.github.io/MM2017/), which shows a novel application.
+
 ## Acknowledgements
 
 This work was supported by the grant of National Natural Science Foundation of
