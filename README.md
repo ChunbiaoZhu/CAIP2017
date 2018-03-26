@@ -33,7 +33,7 @@ https://chunbiaozhu.github.io/CAIP2017/
 
 How to use:
 
-	1. Add test image to ./center_prior/Image/ , then run center_prior to get the center image in ./center_prior/center_results/.
+	1. Add test image to ./center_prior/Image/ and ./Image/, then run center_prior to get the center image in ./center_prior/center_results/.
 	2. Add depth to ./Depth/, then run OURS1.m show the first layer result in ./OURS1/.
 	3. Run OURS2.m, then get the second layer result in ./OURS2/.
 	4. Run OURS.m, then get our final result in ./OURS/.
