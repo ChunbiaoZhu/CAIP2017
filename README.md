@@ -76,12 +76,12 @@ Province, China (No.2014B090910001), the grant of Guangdong Province Projects of
 If you have any general doubt about our work or code which may be of interest for other researchers, please use the [public issues section](https://github.com/ChunbiaoZhu/CAIP2017/issues) on this github repo. Alternatively, drop us an e-mail at <mailto:zhuchunbiao@pku.edu.cn>.
 
 ## Cite this paper as:
-	Zhu C., Li G., Guo X., Wang W., Wang R. (2017) A Multilayer Backpropagation Saliency Detection Algorithm Based on Depth Mining. In: Felsberg M., Heyden A., Krüger N. (eds) Computer Analysis of Images and Patterns. CAIP 2017. Lecture Notes in Computer Science, vol 10425. Springer, Cham
+	1. Zhu C., Li G., Guo X., Wang W., Wang R. (2017) A Multilayer Backpropagation Saliency Detection Algorithm Based on Depth Mining. In: Felsberg M., Heyden A., Krüger N. (eds) Computer Analysis of Images and Patterns. CAIP 2017. Lecture Notes in Computer Science, vol 10425. Springer, Cham
 	
-	Chunbiao Zhu and Ge Li, A multilayer backpropagation saliency detection algorithm and its applications. Multimed Tools Appl (2018). https://doi.org/10.1007/s11042-018-5780-4
+	2. Chunbiao Zhu and Ge Li, A multilayer backpropagation saliency detection algorithm and its applications. Multimed Tools Appl (2018). https://doi.org/10.1007/s11042-018-5780-4
 
 ## Cite this paper as:
-	@Inbook{Zhu2017,
+	1. @Inbook{Zhu2017,
 	author="Zhu, Chunbiao
 	and Li, Ge
 	and Guo, Xiaoqiang
@@ -101,7 +101,7 @@ If you have any general doubt about our work or code which may be of interest fo
 
 
 
-	@Article{Zhu2018,
+	2. @Article{Zhu2018,
 	author="Zhu, Chunbiao
 	and Li, Ge",
 	title="A multilayer backpropagation saliency detection algorithm and its applications",
