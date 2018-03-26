@@ -31,6 +31,8 @@ https://chunbiaozhu.github.io/CAIP2017/
 
 ## Code 
 
+You can download our source code in [here](https://github.com/ChunbiaoZhu/CAIP2017/blob/master/CAIP_MB_CODE.zip).
+
 How to use:
 
 	1. Add test image to ./center_prior/Image/ and ./Image/, then run center_prior to get the center image in ./center_prior/center_results/.
