@@ -13,6 +13,8 @@
 
 This paper is selected as the [Sample Paper](http://www.springer.com/cda/content/document/cda_downloaddocument/9783319646978-c2.pdf?SGWID=0-0-45-1612625-p181071051) in [CAIP2017](https://www.springer.com/cn/book/9783319646978#otherversion=9783319646985)
 
+The extended version "A multilayer backpropagation saliency detection algorithm and its applications" has been pubilshed in Multimed Tools Appl 2018. You can download in [here](https://link.springer.com/article/10.1007%2Fs11042-018-5780-4).
+
 
 ## Abstract
 	
@@ -74,7 +76,10 @@ Province, China (No.2014B090910001), the grant of Guangdong Province Projects of
 If you have any general doubt about our work or code which may be of interest for other researchers, please use the [public issues section](https://github.com/ChunbiaoZhu/CAIP2017/issues) on this github repo. Alternatively, drop us an e-mail at <mailto:zhuchunbiao@pku.edu.cn>.
 
 ## Cite this paper as:
-Zhu C., Li G., Guo X., Wang W., Wang R. (2017) A Multilayer Backpropagation Saliency Detection Algorithm Based on Depth Mining. In: Felsberg M., Heyden A., Krüger N. (eds) Computer Analysis of Images and Patterns. CAIP 2017. Lecture Notes in Computer Science, vol 10425. Springer, Cham
+	Zhu C., Li G., Guo X., Wang W., Wang R. (2017) A Multilayer Backpropagation Saliency Detection Algorithm Based on Depth Mining. In: Felsberg M., Heyden A., Krüger N. (eds) Computer Analysis of Images and Patterns. CAIP 2017. Lecture Notes in Computer Science, vol 10425. Springer, Cham
+	
+	Chunbiao Zhu and Ge Li, A multilayer backpropagation saliency detection algorithm and its applications. Multimed Tools Appl (2018). https://doi.org/10.1007/s11042-018-5780-4
+
 ## Cite this paper as:
 	@Inbook{Zhu2017,
 	author="Zhu, Chunbiao
@@ -92,6 +97,22 @@ Zhu C., Li G., Guo X., Wang W., Wang R. (2017) A Multilayer Backpropagation Sali
 	isbn="978-3-319-64698-5",
 	doi="10.1007/978-3-319-64698-5_2",
 	url="https://doi.org/10.1007/978-3-319-64698-5_2"
+	}
+
+
+
+	@Article{Zhu2018,
+	author="Zhu, Chunbiao
+	and Li, Ge",
+	title="A multilayer backpropagation saliency detection algorithm and its applications",
+	journal="Multimedia Tools and Applications",
+	year="2018",
+	month="Mar",
+	day="07",
+	abstract="Saliency detection is an active topic in the multimedia field. Most previous works on saliency detection focus on 2D images. However, these methods are not robust against complex scenes which contain multiple objects or complex backgrounds. Recently, depth information supplies a powerful cue for saliency detection. In this paper, we propose a multilayer backpropagation saliency detection algorithm based on depth mining by which we exploit depth cue from three different layers of images. The proposed algorithm shows a good performance and maintains the robustness in complex situations. Experiments' results show that the proposed framework is superior to other existing saliency approaches. Besides, we give two innovative applications by this algorithm, such as scene reconstruction from multiple images and small target object detection in video.",
+	issn="1573-7721",
+	doi="10.1007/s11042-018-5780-4",
+	url="https://doi.org/10.1007/s11042-018-5780-4"
 	}
 
 
