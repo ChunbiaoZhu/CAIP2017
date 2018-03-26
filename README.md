@@ -31,13 +31,12 @@ https://chunbiaozhu.github.io/CAIP2017/
 
 How to use:
 
-1.run OURS1.m show the first layer result.
+	1. Add test image to ./center_prior/Image/ , then run center_prior to get the center image in ./center_prior/center_results/.
+	2. Add depth to ./Depth/, then run OURS1.m show the first layer result in ./OURS1/.
+	3. Run OURS2.m, then get the second layer result in ./OURS2/.
+	4. Run OURS.m, then get our final result in ./OURS/.
 
-2.run OURS2.m show the second layer result.
-
-3.run OURS.m  show our final result.
-
-If you use our codes,please cite this paper!
+If you encounter an error, please restart MATLAB and re-run the code as described above.
 
 If you have any question,please email us!
 
@@ -49,7 +48,7 @@ You can download our results on RGBD2_Dataset in [here](https://github.com/Chunb
 If you have any question,please email us!
 
 
-## RGBD-PKU80 DATASET  【A new dataset is public in ICCV 2017】
+## RGBD-PKU80 DATASET  【A new dataset is public in ICCVW 2017】
 
 PKU80-Dataset is public.
 
@@ -83,9 +82,6 @@ Zhu C., Li G., Guo X., Wang W., Wang R. (2017) A Multilayer Backpropagation Sali
 	and Guo, Xiaoqiang
 	and Wang, Wenmin
 	and Wang, Ronggang",
-	editor="Felsberg, Michael
-	and Heyden, Anders
-	and Kr{\"u}ger, Norbert",
 	title="A Multilayer Backpropagation Saliency Detection Algorithm Based on Depth Mining",
 	bookTitle="Computer Analysis of Images and Patterns: 17th International Conference, CAIP 2017, Ystad, Sweden, August 22-24, 		2017, Proceedings, Part II",
 	year="2017",
