@@ -1,5 +1,4 @@
 ## A Multilayer Backpropagation Saliency Detection Algorithm Based on Depth Mining
-## A Multilayer Backpropagation Saliency Detection Algorithm and Its Applications
 
 
 
