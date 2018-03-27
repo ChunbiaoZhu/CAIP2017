@@ -1,4 +1,5 @@
 ## A Multilayer Backpropagation Saliency Detection Algorithm Based on Depth Mining
+## A Multilayer Backpropagation Saliency Detection Algorithm and Its Applications
 
 
 
@@ -13,7 +14,7 @@
 
 This paper is selected as the [Sample Paper](http://www.springer.com/cda/content/document/cda_downloaddocument/9783319646978-c2.pdf?SGWID=0-0-45-1612625-p181071051) in [CAIP2017](https://www.springer.com/cn/book/9783319646978#otherversion=9783319646985)
 
-### The extended version "A multilayer backpropagation saliency detection algorithm and its applications" has been pubilshed in Multimed Tools Appl 2018. You can download in [here](https://link.springer.com/article/10.1007%2Fs11042-018-5780-4).
+The extended version " A multilayer backpropagation saliency detection algorithm and its applications " has been pubilshed in Multimed Tools Appl 2018. You can download in [here](https://link.springer.com/article/10.1007%2Fs11042-018-5780-4).
 
 
 ## Abstract
